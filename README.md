@@ -34,7 +34,7 @@ Four parameters are used, each of which means the following
 - `self_replace_steps`: specifies the fraction of steps to replace the self attention maps.
 - `blend_word` : part you want to edit and the part you want to edit.
 - `eq_params` : A variable that controls the attention value. In other words, you can increase the value as much as you want to amplify
-```
+
 For example, if you want to change **strawberry cake** to a **Lego cake**, you can add the code as below.
 ```bash
 prompts = ["a slice of strawberry cake on a plate",
@@ -44,13 +44,13 @@ cross_replace_steps = {'default_': .8,}
 self_replace_steps = .4
 blend_word = ((('strawberry',), ('lego',)))
 eq_params = {"words": ("lego",), "values": (2,)}
-
 ```
 
 The result is as follows.
-| Original Image                         | Edited Image                    |  
-|----------------------------------------|---------------------------------|
-|<img src="./docs/strawberry_cake.jpeg"> |<img src="./docs/lego_cake.png"> |
+| Original Image                 | Edited Image                           |  
+|--------------------------------|----------------------------------------|
+| <p align="center"><img src="./docs/strawberry_cake.jpeg" width="300px" height="300px"></p>| <p align="center"><img src="./docs/lego_cake.png" width="300px" height="300px"></p> |
+
 
 ### STEP 3 : Style Transfer
 Our project aimed to **create fantasy novels**, so we thought that novel illustrations should also be fantasy images. Therefore, we wanted to **keep the original images intact**, but only change the image style.
@@ -74,7 +74,7 @@ gen_images = pipe(
 The result is as follows.
 | Original Image                  | Lineart                            | Style Transfer                                |
 |---------------------------------|------------------------------------|-----------------------------------------------|
-|<img src="./docs/lego_cake.png"> |<img src="./docs/lego_lineart.png"> | <img src='./docs/style_transfer_result.png>'> |
+| <p align="center"><img src="./docs/lego_cake.png" width="300px" height="300px"></p> | <p align="center"><img src="./docs/lego_lineart.png" width="300px" height="300px"></p> | <p align="center"><img src='./docs/style_transfer_result.png' width="300px" height="300px"></p>|
 
 ### STEP 4 : Text Generation
 Finally, create a fantasy novel. When creating fantasy novels, we used the GPT API to generate text and translate Korean. At that stage, we created novels based on captions by adding captions used in edited images.
