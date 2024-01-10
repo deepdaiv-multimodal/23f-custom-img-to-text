@@ -10,7 +10,7 @@ Our project consists of a four stages, and the flow is as follows.
 Illustrations and novel creation consist of four stages.
 
 ### STEP 1 : Image Captioning
-First, We proceed with image captioning for the input image. We used [BLIP-2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) model. The next steps also include prompts for the image, so we thought **it was important to use accurate and consistent captions**, so we used the image capturing model.
+First, We proceed with image captioning for the input image. We used [BLIP-2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) model. The next steps also include prompts for the image, so we thought **it was important to use accurate and consistent captions**, so we used the image captioning model.
 
 #### Loading Model
 We uses the `blip2_opt-2.7b` weights.
