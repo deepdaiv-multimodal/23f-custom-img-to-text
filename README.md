@@ -3,7 +3,7 @@
 
 ## Overview
 Do you imagine a lot? We often imagine, "What if...". We decided to create an edited an image-based novel because it was regrettable that these imaginations could only be imagined in our heads were quickly forgotten. 
-If you want to see the full code of our project, please refer to [Custom_Nobel.ipynb](https://github.com/deepdaiv-multimodal/23f-custom-img-to-text/blob/main/Custom_Novel.ipynb).
+If you want to see the full code of our project, please refer to [Custom_Novel.ipynb](https://github.com/deepdaiv-multimodal/23f-custom-img-to-text/blob/main/Custom_Novel.ipynb).
 
 Our project consists of a four stages, and the flow is as follows.
 <img src="./docs/flowchart.png">
